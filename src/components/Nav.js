@@ -4,7 +4,7 @@ import Logo from '../assets/logo.png'
 const Nav = () => {
   return (
       <>
-          <nav>
+          <nav className='nav__section'>
               <figure>
                   <img src={Logo} alt="Little Lemon Logo" />
               </figure>

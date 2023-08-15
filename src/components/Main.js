@@ -7,26 +7,26 @@ import deliveryImg from "../assets/delivery-logo.png";
 const Main = () => {
     return (
         <>
-            <section>
-                <div>
-                    <h3>This week's special</h3>
+            <main className="main__section">
+                <div className="main__section-title">
+                    <h2>This week's specials</h2>
                     <p>Online menu</p>
                 </div>
                 <article>
-                    <a href="/">
-                        <div>
-                            <figure>
-                                <img src={menu1} alt="Greek salad" />
-                            </figure>
-                            <div>
-                                <h6>Greek Salad</h6>
+                    <a href="/" className="main__section-card">
+                        <figure>
+                            <img src={menu1} alt="Greek salad" className="img__height" />
+                        </figure>
+                        <div className="main__section-card-desc">
+                            <div className="menu__price">
+                                <h4>Greek Salad</h4>
                                 <span>$12.99</span>
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut
                                 fugiat blanditiis dolorum. Magnam, iure!
                             </p>
-                            <div>
+                            <div className="main__section-card-footer">
                                 <h6>Order a delivery</h6>
                                 <figure>
                                     <img src={deliveryImg} alt="Bike" />
@@ -34,20 +34,20 @@ const Main = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="/">
-                        <div>
-                            <figure>
-                                <img src={menu2} alt="Lemon desserts" />
-                            </figure>
-                            <div>
-                                <h6>Lemon Desserts</h6>
+                    <a href="/" className="main__section-card">
+                        <figure>
+                            <img src={menu2} alt="Lemon desserts" className="img__height" />
+                        </figure>
+                        <div className="main__section-card-desc">
+                            <div className="menu__price">
+                                <h4>Lemon Desserts</h4>
                                 <span>$5.99</span>
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut
                                 fugiat blanditiis dolorum. Magnam, iure!
                             </p>
-                            <div>
+                            <div className="main__section-card-footer">
                                 <h6>Order a delivery</h6>
                                 <figure>
                                     <img src={deliveryImg} alt="Bike" />
@@ -55,20 +55,20 @@ const Main = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="/">
-                        <div>
-                            <figure>
-                                <img src={menu3} alt="Bruschetta" />
-                            </figure>
-                            <div>
-                                <h6>Bruschetta</h6>
+                    <a href="/" className="main__section-card">
+                        <figure>
+                            <img src={menu3} alt="Bruschetta" className="img__height"/>
+                        </figure>
+                        <div className="main__section-card-desc">
+                            <div className="menu__price">
+                                <h4>Bruschetta</h4>
                                 <span>$5.00</span>
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut
                                 fugiat blanditiis dolorum. Magnam, iure!
                             </p>
-                            <div>
+                            <div className="main__section-card-footer">
                                 <h6>Order a delivery</h6>
                                 <figure>
                                     <img src={deliveryImg} alt="Bike" />
@@ -77,7 +77,7 @@ const Main = () => {
                         </div>
                     </a>
                 </article>
-            </section>
+            </main>
         </>
     );
 };

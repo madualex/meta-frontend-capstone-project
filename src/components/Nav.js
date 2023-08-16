@@ -1,23 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 
 const Nav = () => {
   return (
       <>
           <nav className='nav__section'>
-              <a href="/">
+              <Link to="/">
                   <figure>
                       <img src={Logo} alt="Little Lemon Logo" />
                   </figure>
-              </a>
+              </Link>
               
               <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/">About</a></li>
-                  <li><a href="/">Menu</a></li>
-                  <li><a href="/">Reservations</a></li>
-                  <li><a href="/">Order Online</a></li>
-                  <li><a href="/">Login</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/">About</Link></li>
+                  <li><Link to="/">Menu</Link></li>
+                  <li><Link to="/booking">Reservations</Link></li>
+                  <li><Link to="/">Order Online</Link></li>
+                  <li><Link to="/">Login</Link></li>
               </ul>
           </nav>
           

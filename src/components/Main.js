@@ -3,6 +3,7 @@ import menu1 from "../assets/salad.png";
 import menu2 from "../assets/lemon-dessert.jpg";
 import menu3 from "../assets/desserts.png";
 import deliveryImg from "../assets/delivery-logo.png";
+import Menu from "./Menu";
 
 const Main = () => {
     return (
@@ -13,7 +14,10 @@ const Main = () => {
                     <p>Online menu</p>
                 </div>
                 <article>
-                    <a href="/" className="main__section-card">
+                    <Menu menuImage={menu1} deliveryImg={deliveryImg} menu='Greek Salad' price='$12.99' />
+                    <Menu menuImage={menu2} deliveryImg={deliveryImg} menu='Lemon Desserts' price='$5.99' />
+                    <Menu menuImage={menu3} deliveryImg={deliveryImg} menu='Bruschetta' price='$5.00' />
+                    {/* <a href="/" className="main__section-card">
                         <figure>
                             <img src={menu1} alt="Greek salad" className="img__height" />
                         </figure>
@@ -75,7 +79,7 @@ const Main = () => {
                                 </figure>
                             </div>
                         </div>
-                    </a>
+                    </a> */}
                 </article>
             </main>
         </>

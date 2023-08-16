@@ -5,9 +5,12 @@ const Nav = () => {
   return (
       <>
           <nav className='nav__section'>
-              <figure>
-                  <img src={Logo} alt="Little Lemon Logo" />
-              </figure>
+              <a href="/">
+                  <figure>
+                      <img src={Logo} alt="Little Lemon Logo" />
+                  </figure>
+              </a>
+              
               <ul>
                   <li><a href="/">Home</a></li>
                   <li><a href="/">About</a></li>

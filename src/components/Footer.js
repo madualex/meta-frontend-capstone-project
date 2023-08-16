@@ -26,7 +26,7 @@ const Footer = () => {
                         <p>Phone: +234810087657</p>
                         <p>Email: techwithalex1@gmail.com</p>
                     </div>
-                    <div>
+                    <div className='socials'>
                         <h4>Social media links</h4>
                         <li><a href="/">Facebook</a></li>
                         <li><a href="/">Threads</a></li>

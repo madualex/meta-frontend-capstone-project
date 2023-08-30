@@ -1,15 +1,15 @@
 
 import React from 'react'
 import Header from './Header'
-import Main from './Main'
+import Menus from './Menus'
 
 const Homepage = () => {
-  return (
-      <>
-          <Header />
-          <Main />
-      </>
-  )
+    return (
+        <>
+            <Header />
+            <Menus />
+        </>
+    )
 }
 
 export default Homepage

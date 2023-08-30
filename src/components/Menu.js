@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Menu = (props) => {
     return (
         <>
-            <Link to="/" className="main__section-card">
+            <a href="/" className="main__section-card">
                 <figure>
                     <img src={props.menuImage} alt={props.menu} className="img__height" />
                 </figure>
@@ -24,7 +23,7 @@ const Menu = (props) => {
                         </figure>
                     </div>
                 </div>
-            </Link>
+            </a>
         </>
     )
 }

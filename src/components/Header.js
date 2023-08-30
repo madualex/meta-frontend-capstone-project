@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import headerBg from '../assets/hero-img.png'
 
 const Header = () => {
@@ -9,9 +10,9 @@ const Header = () => {
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
                     <p>We are a family owned mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
-                    <a href="/" className='reserve__table'>
+                    <Link to="/booking" className='reserve__table'>
                         Reserve a Table
-                    </a>
+                    </Link>
                 </div>
                 <figure id='order__2'>
                     <img src={headerBg} alt="A chef" />

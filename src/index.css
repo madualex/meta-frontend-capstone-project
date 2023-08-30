@@ -161,6 +161,7 @@ code {
 
 .main__section {
   margin-top: 200px;
+  margin-bottom: 150px;
   margin-left: 280px;
   margin-right: 280px;
   /* height: 60vh; */
@@ -280,7 +281,7 @@ code {
 footer {
   background: #edefee;
   padding-bottom: 10px;
-  margin: 150px auto 0;
+  margin: 0 auto;
 }
 
 .footer__section {
@@ -342,5 +343,142 @@ footer {
 
   .socials {
     margin-bottom: 50px;
+  }
+}
+
+/* BOOKING PAGE STYLING */
+
+.booking__section {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 50% 45%;
+  /* place-items: center; */
+}
+
+/* BOOKING FORM STYLING */
+
+form {
+  display: grid;
+  margin: 50px auto 150px;
+  max-width: 350px;
+  gap: 20px;
+  color: #f4ce14;
+  background: #495e57;
+
+  padding: 50px 80px;
+}
+
+form h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form label {
+  font-size: 16px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+}
+
+form input[type="submit"] {
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #f4ce14;
+  color: #495e57;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CONFIRMATION PAGE STYLING */
+
+aside {
+  margin: 100px 200px 150px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #495e57;
+  min-height: 50vh;
+}
+
+aside .p__slot {
+  margin-top: 5px;
+  color: #edefee;
+  text-align: center;
+}
+
+aside h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #f4ce14;
+}
+
+aside span {
+  text-transform: uppercase;
+}
+
+aside h2 {
+  margin-bottom: 5px;
+  margin-top: 50px;
+  color: #f4ce14;
+}
+
+aside .table__slots {
+  display: flex;
+}
+
+aside .table__slots p {
+  color: #d5d9d7;
+  margin-right: 50px;
+}
+
+aside .slot__color {
+  color: #f4ce14;
+}
+
+/* CONFIRMATION PAGE RESPONSIVENESS */
+
+@media screen and (max-width: 767px) {
+  aside {
+    margin: 50px 10px 50px;
+    padding: 20px;
+  }
+
+  aside h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-inline: 10px;
+  }
+
+  aside .p__slot {
+    margin-top: 20px;
+    padding-inline: 15px;
+  }
+
+  aside h2 {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .table__slots {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .table__slots p {
+    margin-top: 5px;
   }
 }

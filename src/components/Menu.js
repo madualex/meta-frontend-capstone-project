@@ -3,7 +3,7 @@ import React from 'react'
 const Menu = (props) => {
     return (
         <>
-            <a href="/" className="main__section-card">
+            <a href="/" className="main__section-card" aria-label="On Click">
                 <figure>
                     <img src={props.menuImage} alt={props.menu} className="img__height" />
                 </figure>

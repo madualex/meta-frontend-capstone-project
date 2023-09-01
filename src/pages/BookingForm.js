@@ -22,6 +22,8 @@ const BookingForm = ({mystate, mydispatch, formSubmit}) => {
     console.log('data', formData)
   }
 
+  const Disabled = mystate.selectedDate === '' && mystate.selectedTime === '' && mystate.guests === '' && mystate.occassion === ''
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -32,6 +34,7 @@ const BookingForm = ({mystate, mydispatch, formSubmit}) => {
           id="res-date"
           value={mystate.selectedDate}
           onChange={(e) => mydispatch({ type: 'ANY_DATE', payload: e.target.value })}
+          required
         />
         <label for="res-time">Choose time</label>
         <select
@@ -41,6 +44,7 @@ const BookingForm = ({mystate, mydispatch, formSubmit}) => {
             type: 'ANY_TIME',
             payload: e.target.value
           })}
+          required
         >
           <option value="">Select a time</option>
           {mystate.availableTimes.map((items) => (
@@ -56,6 +60,7 @@ const BookingForm = ({mystate, mydispatch, formSubmit}) => {
           id="guests"
           value={mystate.guests}
           onChange={e => mydispatch({ type: 'GUESTS', payload: e.target.value })}
+          required
         />
         <label htmlFor="occasion">Occasion</label>
         <select
@@ -65,11 +70,13 @@ const BookingForm = ({mystate, mydispatch, formSubmit}) => {
             type: 'OCCASSION',
             payload: e.target.value
           })}
+          required
         >
-          <option>Select an occassion</option>
+          <option value=''>Select an occassion</option>
           {mystate.occassions.map(i => <option key={i.value} value={i.value}>{i.label}</option>)}
         </select>
-        <input type="submit" value="Make Your reservation" />
+        <button disabled={Disabled} type="submit" aria-label="On Click">Make Your reservation</button>
+        {/* <input disabled={Disabled} type="submit" value="Make Your reservation" /> */}
       </form>
     </>
   );

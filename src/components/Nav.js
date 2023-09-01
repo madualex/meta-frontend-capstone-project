@@ -5,7 +5,7 @@ const Nav = () => {
   return (
       <>
           <nav className='nav__section'>
-              <a href="/">
+              <a href="/" aria-label="On Click">
                   <figure>
                       <img src={Logo} alt="Little Lemon Logo" />
                   </figure>
